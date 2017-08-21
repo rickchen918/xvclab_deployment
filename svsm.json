@@ -1,0 +1,25 @@
+{
+ "_comment":"this file is to provison nsx manager",
+	"vsm":{
+		"vsm_cli_passwd_0":"Nicira123$",
+		"vsm_cli_en_passwd_0":"Nicira123$", 
+		"vsm_hostname":"svcnsxmgr", 
+		"vsm_ip_0":"192.168.66.86", 
+		"vsm_netmask_0":"255.255.255.0", 
+		"vsm_gateway_0":"192.168.66.1", 
+		"vsm_dns1_0":"192.168.0.96", 
+		"vsm_domain_0":"rkc.local", 
+		"vsm_ntp_0":"192.168.0.58", 
+		"vsm_isSSHEnabled":"True"
+	},
+
+	"vc":{
+		"vcenter":"vc.rkc.local",
+		"vc_user":"administrator@rkc.local",
+		"vc_passwd":"Nicira123$",
+		"dc_name":"Home",
+		"cluster_name":"nsx",
+		"net":"66-0",
+		"ova_name":"VMware-NSX-Manager-6.2.4-4292526.ova"
+	}
+}

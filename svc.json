@@ -1,0 +1,46 @@
+{
+    "__version": "2.3.0",
+    "__comments": "Sample template to deploy a vCenter Server Appliance with an external Platform Services Controller on a vCenter Server instance.",
+    "new.vcsa": {
+        "vc": {
+            "hostname": "vc.rkc.local",
+            "username": "administrator@rkc.local",
+            "password": "Nicira123$",
+            "deployment.network": "66-0",
+            "datacenter": [
+                "Home"
+            ],
+            "datastore": "nsx_lab",
+            "target": [
+                "nsx"
+            ]
+        },
+        "appliance": {
+            "thin.disk.mode": true,
+            "deployment.option": "management-small",
+            "name": "svc-vc"
+        },
+        "network": {
+            "ip.family": "ipv4",
+            "mode": "static",
+            "ip": "192.168.66.85",
+            "dns.servers": [
+                "192.168.0.96"
+            ],
+            "prefix": "24",
+            "gateway": "192.168.66.1",
+            "system.name": "svc.rkc.local"
+        },
+        "os": {
+            "password": "Nicira123$",
+            "ssh.enable": true,
+	    "ntp.servers": "192.168.0.58"
+        },
+        "sso": {
+            "password": "Nicira123$",
+            "domain-name": "rkc.local",
+            "platform.services.controller": "psc1.rkc.local",
+            "sso.port": 443
+        }
+    }
+}
